@@ -8,15 +8,7 @@ flask-mongoengine==1.0.0
 Flask-PyMongo==2.3.0
 Flask-RESTful==0.3.8
 Flask-WTF==0.15.1
-flatbuffers==1.12
-future==0.18.2
-gast==0.3.3
-google-api-python-client==1.7.11
-google-auth==1.28.0
-google-auth-httplib2==0.0.3
-google-auth-oauthlib==0.4.3
-google-pasta==0.2.0
-grpcio==1.32.0
+
 gunicorn==20.1.0
 h5py==2.10.0
 httplib2==0.14.0
