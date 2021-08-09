@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration form</title>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/home.css')}}">
+</head>
+<body>
+<center>
+<h1>Registeration Form</h1>
+
+<div class="formbox">
+    <form action="{{url_for('postdata')}}" method="POST">
+        <label class="formfield" for="name">Name : </label>
+        <input class="" type="text" name="name" id="name"><br><br>
+        <label class="formfield" for="email">Email : </label>
+        <input class="" type="email" name="email" id="email"><br><br>
+        <label class="formfield" for="phone">Phone : </label>
+        <input class="" type="text" name="phone" id="phone"><br><br>
+        <label class="formfield" for="gender">Gender :   </label>
+        Male <input class="" type="radio" name="gender" value="male" id="male"> Female
+        <input class="" type="radio" name="gender" value="female" id="female"><br><br>
+        <label class="formfield" for="location">Location : </label><br><br>
+        <!--map div-->
+        <div id="map"></div><br>
+           <h4>The location selected is : </h4>
+            <input type="text" id="lat" name="lat" ><br>
+            <input type="text" id="lng" name="lng" >
+<br><br>
+            <input class="submitbtn" type="submit" name="submit" id="submit">
+        </form>
+        
+        <script type="text/javascript" src="{{url_for('static',filename='js/map2.js')}}"></script>
+</div>
+
+</center> 
+</body>
+</html>

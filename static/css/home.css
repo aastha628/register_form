@@ -1,0 +1,21 @@
+body{
+    align-items: center;
+}
+.formbox{
+ margin: 10px 10px 10px 10px;
+ padding: 10px 10px 10px 10px;
+ border: 5px solid black;
+ width: 60%;
+}
+.submitbtn{
+    border: 3px solid black;
+    height: 40px;
+    width: 80px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+#map{
+    width:700px;
+    height: 500px; 
+}
