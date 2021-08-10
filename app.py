@@ -22,8 +22,7 @@ def postdata():
     register_url ="https://user-register-data.herokuapp.com/"
     r = requests.post(url= register_url,json=user_data)
     data=json.loads(r.text)
-    print(data)
-    return "data submited"
+    return render_template("submit.html")
 
 
 

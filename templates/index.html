@@ -15,11 +15,11 @@
 <div class="formbox">
     <form action="{{url_for('postdata')}}" method="POST">
         <label class="formfield" for="name">Name : </label>
-        <input class="" type="text" name="name" id="name"><br><br>
+        <input class="" type="text" name="name" id="name" required><br><br>
         <label class="formfield" for="email">Email : </label>
-        <input class="" type="email" name="email" id="email"><br><br>
+        <input class="" type="email" name="email" id="email" required><br><br>
         <label class="formfield" for="phone">Phone : </label>
-        <input class="" type="text" name="phone" id="phone"><br><br>
+        <input class="" type="text" name="phone" id="phone" required><br><br>
         <label class="formfield" for="gender">Gender :   </label>
         Male <input class="" type="radio" name="gender" value="male" id="male"> Female
         <input class="" type="radio" name="gender" value="female" id="female"><br><br>
@@ -33,7 +33,7 @@
             <input class="submitbtn" type="submit" name="submit" id="submit">
         </form>
         
-        <script type="text/javascript" src="{{url_for('static',filename='js/map2.js')}}"></script>
+        <script type="text/javascript" src="{{url_for('static',filename='js/script.js')}}"></script>
 </div>
 
 </center> 
